@@ -2,9 +2,15 @@
 
 class Renderer {
 
+	private $formatter;
+
+	public function __construct( Formatter $formatter ) {
+
+		$this->formatter = $formatter;
+	}
+
 	public function render_formatted_data( $data ) {
 
-		$formatter = new Formatter();
-		echo $formatter->format( $data );
+		echo $this->formatter->format( $data );
 	}
 }
