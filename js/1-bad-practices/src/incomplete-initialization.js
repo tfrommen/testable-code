@@ -1,11 +1,5 @@
-function Renderer() {
-	var formatter;
-
-	this.setFormatter = function( f ) {
-		formatter = f;
-	};
-
-	this.getFormattedData = function( data ) { // <-- SUT
+function Renderer( formatter ) {
+	this.getFormattedData = function( data ) {
 		return formatter.format( data );
 	};
 }
