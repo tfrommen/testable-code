@@ -1,0 +1,32 @@
+{
+  "name": "testable-code",
+  "version": "0.0.1-alpha",
+  "description": "Example code for the talk \"How (Not) to Write Testable Code\" at WordCamp Nuremberg, 2016.",
+  "keywords": [
+    "code",
+    "javascript",
+    "mockery",
+    "php",
+    "phpunit",
+    "sinon",
+    "tape",
+    "testable",
+    "testing"
+  ],
+  "homepage": "https://github.com/tfrommen/testable-code",
+  "bugs": "https://github.com/tfrommen/testable-code/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Thorsten Frommen",
+    "email": "info@tfrommen.de",
+    "url": "http://tfrommen.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tfrommen/testable-code"
+  },
+  "devDependencies": {
+    "sinon": "^1.17.3",
+    "tape": "^4.5.1"
+  }
+}
