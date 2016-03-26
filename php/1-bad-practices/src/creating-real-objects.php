@@ -2,9 +2,16 @@
 
 class Renderer {
 
-	public function render_formatted_data( $data ) {
+	private $formatter_factory;
 
-		$formatter = new Formatter();
+	public function __construct( FormatterFactory $formatter_factory ) {
+
+		$this->formatter_factory = $formatter_factory;
+	}
+
+	public function render_formatted_data( $data, $options ) {
+
+		$formatter = $this->formatter_factory->create( $options );
 		echo $formatter->format( $data );
 	}
 }
