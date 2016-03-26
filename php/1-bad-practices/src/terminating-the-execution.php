@@ -5,9 +5,14 @@ class Checker {
 	public function check_data( $data ) {
 
 		if ( ! $data ) {
-			exit();
+			$this->call_exit();
 		}
 
 		// ...
+	}
+
+	protected function call_exit() {
+
+		exit();
 	}
 }
