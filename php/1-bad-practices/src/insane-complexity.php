@@ -4,12 +4,16 @@ class Processor {
 
 	public function process( $data ) {
 
-		// 16 lines full of different checks, a lot of if-else, ...
+		if ( ! $this->checker->check( $data ) ) {
+			return false;
+		}
 
-		// 23 lines full of data preparing, switch-case all over, ...
+		$data = $this->prepare( $data );
 
 		// 42 lines full of data processing...
 
-		// 8 lines full of post-processing, if-elseif-else again...
+		$this->post_processor->process( $data );
+
+		return true;
 	}
 }
