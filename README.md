@@ -16,9 +16,9 @@ The JavaScript unit tests require [tape](https://github.com/substack/tape) and [
 
 The second and main part of the talk then is about code examples that are either hard to test, or not testable at all. As with the unit test examples, this repository also includes the bad practice [PHP code](php/1-bad-practices/src) and [JavaScript code](js/1-bad-practices/src) examples.
 
-Since only presenting _bad_ (i.e., hard-to-test) code doesn't do any good, this repository also includes improved versions of the code. For each of the code examples, you can find an according [pull request](pulls). By means of the diff view, you can easily compare the original and the improved code.
+Since only presenting _bad_ (i.e., hard-to-test) code doesn't do any good, this repository also includes improved versions of the code. For each of the code examples, you can find an according [pull request](https://github.com/tfrommen/testable-code/pulls). By means of the diff view, you can easily compare the original and the improved code.
 
-Feel free to [fork the repository](fork), and work on possible tests, if you like.
+Feel free to [fork this repository](https://github.com/tfrommen/testable-code/fork), and work on possible tests, if you like.
 
 ## Changelog
 
