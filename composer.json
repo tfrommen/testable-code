@@ -41,7 +41,7 @@
     "classmap": [
       "php/0-unit-test-examples/src"
     ],
-    "file": [
+    "files": [
       "vendor/antecedent/patchwork/Patchwork.php"
     ]
   },
