@@ -1,23 +1,23 @@
 <?php # -*- coding: utf-8 -*-
 
-require_once __DIR__ . '/src/Oracle.php';
-
 /**
  * Test case for the Oracle class.
  */
 class OracleTest extends PHPUnit_Framework_TestCase {
 
 	/**
-	 * Test for the get_answer() method.
+	 * Tests if the expected answer is returned.
 	 *
-	 * @covers Oracle::get_answer()
+	 * @covers Oracle::answer()
 	 *
 	 * @return void
 	 */
-	public function test_get_answer() {
+	public function test_return_expected_answer() {
 
-		$testee = new Oracle();
-
-		$this->assertSame( '42', $testee->get_answer(), 'get_answer() should return the expected answer.' );
+		$this->assertSame(
+			'42',
+			( new Oracle() )->answer(),
+			'answer() should return the expected answer.'
+		);
 	}
 }

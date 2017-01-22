@@ -21,18 +21,18 @@ class FortuneTeller {
 	}
 
 	/**
-	 * Returns the answer to life, universe and everything - in case you spend enough money, that is.
+	 * Returns the answer to life, universe and everything—in case you spend enough money, that is.
 	 *
-	 * @param int $money Optional. Money spent for an answer. Defaults to 0.
+	 * @param int $money Optional. Money spent for getting an answer. Defaults to 0.
 	 *
-	 * @return string
+	 * @return string An answer.
 	 */
-	public function get_answer( $money = 0 ) {
+	public function answer( $money = 0 ) {
 
 		if ( (int) $money < 5 ) {
 			return '';
 		}
 
-		return $this->oracle->get_answer();
+		return $this->oracle->answer();
 	}
 }

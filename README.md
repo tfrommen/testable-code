@@ -6,11 +6,33 @@ This repository contains example code for the according talk at WordCamp Nurembe
 
 The first part of the talk is about unit testing. After a short summary, you can see several unit test examples. This repository includes the complete and fully documented versions of the presented [PHP unit tests](php/0-unit-test-examples) as well as the respective [JavaScript unit tests](js/0-unit-test-examples).
 
-### Requirements
+### Running the Tests
 
-The PHP unit tests require PHP 5.4+, and [PHPUnit](https://phpunit.de/), [Mockery](https://github.com/padraic/mockery), [Brain Monkey](https://github.com/Brain-WP/BrainMonkey) and [WP_Mock](https://github.com/10up/wp_mock). If you have [Composer](https://getcomposer.org/) installed, just execute `$ composer install`, and you're good to go.
+You want to run the tests yourself? Here's how:
 
-The JavaScript unit tests require [tape](https://github.com/substack/tape) and [Sinon.JS](http://sinonjs.org/). With [npm](https://www.npmjs.com/) installed, `$ npm install` gets you started already.
+#### JavaScript
+
+In order to run the JavaScript tests, you have to install the required [npm](https://www.npmjs.com/) packages first.
+
+Using [Yarn](https://www.npmjs.com/package/yarn):
+
+```shell
+$ yarn && yarn run test
+```
+
+Using [npm](https://www.npmjs.com/package/npm):
+
+```shell
+$ npm i && npm run test
+```
+
+#### PHP
+
+In order to run the PHP tests, you have to install the required [Composer](https://getcomposer.org/) packages first.
+
+```shell
+$ composer install && vendor/bin/phpunit
+```
 
 ## Bad Practices
 
@@ -23,3 +45,9 @@ Feel free to [fork this repository](https://github.com/tfrommen/testable-code/fo
 ## Changelog
 
 [Changelog](CHANGELOG.md).
+
+## License
+
+Copyright (c) 2016 Thorsten Frommen
+
+This code is licensed under the [MIT License](LICENSE).

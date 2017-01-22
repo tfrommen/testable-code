@@ -3,6 +3,7 @@
   "description": "Example code for the talk \"How (Not) to Write Testable Code\" at WordCamp Nuremberg, 2016.",
   "keywords": [
     "code",
+    "es6",
     "javascript",
     "mockery",
     "php",
@@ -10,7 +11,8 @@
     "sinon",
     "tape",
     "testable",
-    "testing"
+    "testing",
+    "unit"
   ],
   "homepage": "https://github.com/tfrommen/testable-code",
   "license": "MIT",
@@ -18,7 +20,7 @@
     {
       "name": "Thorsten Frommen",
       "email": "info@tfrommen.de",
-      "homepage": "http://tfrommen.de",
+      "homepage": "https://tfrommen.de",
       "role": "Developer"
     }
   ],
@@ -30,20 +32,22 @@
     "php": ">=5.4.0"
   },
   "require-dev": {
-    "php": ">=5.4.0",
-    "10up/wp_mock": "dev-master",
-    "brain/monkey": "~1.3",
-    "mockery/mockery": "~0.9",
+    "antecedent/patchwork": "1.3.*",
+    "brain/monkey": "^1.4.0",
+    "mockery/mockery": "^0.9.7",
     "phpunit/phpunit": "~4.8|~5.1"
   },
-  "config": {
-    "platform": {
-      "php": "5.4.0"
-    }
+  "autoload": {
+    "classmap": [
+      "php/0-unit-test-examples/src"
+    ],
+    "file": [
+      "vendor/antecedent/patchwork/Patchwork.php"
+    ]
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "0.0.x-dev"
-    }
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true
   }
 }

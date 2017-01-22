@@ -1,9 +1,10 @@
 {
   "name": "testable-code",
-  "version": "0.0.1-alpha",
+  "version": "0.0.9",
   "description": "Example code for the talk \"How (Not) to Write Testable Code\" at WordCamp Nuremberg, 2016.",
   "keywords": [
     "code",
+    "es6",
     "javascript",
     "mockery",
     "php",
@@ -11,7 +12,8 @@
     "sinon",
     "tape",
     "testable",
-    "testing"
+    "testing",
+    "unit"
   ],
   "homepage": "https://github.com/tfrommen/testable-code",
   "bugs": "https://github.com/tfrommen/testable-code/issues",
@@ -19,14 +21,24 @@
   "author": {
     "name": "Thorsten Frommen",
     "email": "info@tfrommen.de",
-    "url": "http://tfrommen.de"
+    "url": "https://tfrommen.de"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/tfrommen/testable-code"
   },
   "devDependencies": {
-    "sinon": "^1.17.3",
-    "tape": "^4.5.1"
+    "babel-preset-es2015": "^6.0.0",
+    "babel-tape-runner": "^2.0.0",
+    "sinon": "^1.17.0",
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "test": "babel-tape-runner js/**/*Test.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }
