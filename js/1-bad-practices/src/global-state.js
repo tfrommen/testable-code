@@ -1,5 +1,5 @@
-function someFunction() {
-	if ( 42 === globalFoo ) {
+function someFunction( localFoo ) {
+	if ( 42 === localFoo ) {
 		// ...
 	}
 
