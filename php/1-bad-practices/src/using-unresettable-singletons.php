@@ -14,4 +14,9 @@ class Singleton {
 
 		return self::$instance;
 	}
+
+	public static function reset() {
+
+		self::$instance = null;
+	}
 }
