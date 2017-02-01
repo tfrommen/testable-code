@@ -1,6 +1,10 @@
+function setLocation( url ) {
+	window.location.href = url;
+}
+
 function processData( data ) {
 	data = prepareData( data );
 	sendData( data );
 
-	window.location.href = 'http://example.com';
+	setLocation( 'http://example.com' );
 }
