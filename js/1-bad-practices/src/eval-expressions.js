@@ -1,3 +1,3 @@
-function badlyDesignedFunction( data ) {
-	return eval( '42 === data' );
+function okayDesignedFunction( data ) {
+	return 42 === data;
 }
