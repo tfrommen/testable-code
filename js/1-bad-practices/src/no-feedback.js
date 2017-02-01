@@ -1,7 +1,9 @@
 function maybeDoSomething() {
 	if ( ! checkSomething() ) {
-		return;
+		return false;
 	}
 
 	doSomething();
+
+	return true;
 }
